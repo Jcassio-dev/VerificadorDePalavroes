@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { badWordList } from "./utils/ofensas";
+import { badWordList } from "./utils/badWordList";
 
 
 export function App() {
