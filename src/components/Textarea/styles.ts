@@ -15,4 +15,7 @@ export const Container = styled.textarea`
     resize: none;
 
     outline: none;
+
+
+    font-size: 20px;
 `
