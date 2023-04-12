@@ -11,11 +11,11 @@ export function App() {
   const [text, setText] = useState('');
 
   const verifyText = (text: string) => {
-    const lowerCaseText = text.toLowerCase();
+    const formatText = text.toLowerCase();
     
-    const isInclude = badWordList.some(word => lowerCaseText.includes(word));
+    const isInclude = badWordList.some(word => formatText.includes(word) ? formatText.replace(word, '****') : null);
 
-    const response = isInclude ? alert('palavra ofensiva detectada') : alert('Não há palavras ofensivas');
+    const response = isInclude ? console.log(formatText) : alert('Não há palavras ofensivas');
 
     return response
   }
