@@ -17,19 +17,21 @@ export function Home() {
   const verifyText = (text: string) => {
     const badWords: string[] = [];
 
-    const formatText = text.toLowerCase();
+    let formatText = text.toLowerCase();
     
     const isInclude = badWordList.some(word => {
       if(formatText.includes(word)){
         badWords.push(word)
-
-        setText(formatText.replace(word, '*'))
       }   
     });
 
+    const censureBadWords = badWords.map(word => {
+      formatText = formatText.replace(word, '*')
+      setText(formatText)
+    })
+
     const response = badWords.length > 0 ? toast.error(`Conteúdo Impróprio: ${badWords}`) : toast.success('Texto seguro!');
    
-  
   }
 
   return(
