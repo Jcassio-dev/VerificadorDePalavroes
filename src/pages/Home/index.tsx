@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 import { Container, Info } from "./styles";
 
@@ -24,8 +25,8 @@ export function Home() {
       }   
     });
 
-    const response = badWords.length > 0 ? alert(`palavra ofensiva detectada: ${badWords}`) : alert('Não há palavras ofensivas');
-    
+    const response = badWords.length > 0 ? toast.error(`Conteúdo Impróprio: ${badWords}`) : toast.success('Texto seguro!');
+
   }
 
   return(
