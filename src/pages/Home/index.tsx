@@ -6,6 +6,8 @@ import { badWordList } from "../../utils/badWordList";
 
 import Security from '../../assets/Security.svg'
 
+import { Textarea } from "../../components/Textarea";
+
 
 export function Home() {
   const [text, setText] = useState('');
@@ -26,7 +28,7 @@ export function Home() {
         <img src={Security} alt="Rapaz mexendo no computador com cadeados e símbolos que exprimem segurança" />
       <Info>
         <h1>filtro de palavras <span>ofensivas</span></h1>
-        <textarea value={text} onChange={(e: any) => setText(e.target.value)}/>
+        <Textarea value={text} onChange={(e: any) => setText(e.target.value)} placeholder="Digite seu texto aqui"/>
         <button onClick={() => verifyText(text)}>Checar</button>
       </Info>
     </div>
