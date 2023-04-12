@@ -409,6 +409,7 @@ export const badWordList = [
 	"tarad",
 	"tesao",
 	"testuda",
+	"traveco",
 	"tesud",
 	"tezao",
 	"tezaum",
