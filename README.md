@@ -17,14 +17,14 @@ https://user-images.githubusercontent.com/62391659/231556210-0193d78a-c9ef-4449-
 ## Deploy
 - https://selecao-2023-jcassio-dev.vercel.app/
  
-## Description
+## Descrição
 Projeto desenvolvido para a seleção do BitLab 2023, a proposta do projeto era desenvolver um detector de palavras ofensivas e de baixo calão dentro de um texto. Desenvolvi uma solução com base em uma lista de palavras impróprias já predefinidas, onde o texto do usuário passa por um filtro verificando sem alguma das palavras digitadas se encontra nessa lista. Caso encontre, o programa irá substituir as letras da palavra por "*" e retornará ao usuário quais foram as palavras de baixo calão utilizadas.
 
 
 </div> 
 <div id="Features">
 
-### Features
+### Aspectos
 
 - [x] React
 - [x] SPA
@@ -34,7 +34,7 @@ Projeto desenvolvido para a seleção do BitLab 2023, a proposta do projeto era 
 </div>
 <div id="Characteristics">
 
-## Characteristics:
+## Caracteristicas:
 - React + Vite;
 - Component elements;
 - Flexbox;
@@ -44,7 +44,7 @@ Projeto desenvolvido para a seleção do BitLab 2023, a proposta do projeto era 
 </div>
 <div id="Technologies">
 
-## Technologies:
+## Tecnologias:
 
 - Languages: `typescript` `CSS` `HTML`
 - Libraries: `react` `react-icons` `styled-components` `react-toastify`
