@@ -1,10 +1,5 @@
 import { useState } from "react"
-
-const badWordList = [
-  'palavra1',
-  'palavra2',
-  'palavra3'
-]
+import { badWordList } from "./utils/ofensas";
 
 
 export function App() {
@@ -13,9 +8,9 @@ export function App() {
   const verifyText = (text: string) => {
     const formatText = text.toLowerCase();
     
-    const isInclude = badWordList.some(word => formatText.includes(word) ? formatText.replace(word, '****') : null);
+    const isInclude = badWordList.some(word => formatText.includes(word));
 
-    const response = isInclude ? console.log(formatText) : alert('Não há palavras ofensivas');
+    const response = isInclude ? alert("palavra ofensiva detectada") : alert('Não há palavras ofensivas');
 
     return response
   }

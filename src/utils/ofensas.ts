@@ -1,4 +1,4 @@
-[
+export const badWordList = [
     "anal",
 	"ana!",
 	"ant",
@@ -340,7 +340,7 @@
 	"pora",
     "porra",
     "p0rra",
-    "p0rr4",
+    "porr4",
     "p0rr4",
 	"porinh",
 	"porno",
