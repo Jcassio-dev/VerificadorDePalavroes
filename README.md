@@ -53,33 +53,35 @@ Projeto desenvolvido para a seleção do BitLab 2023, a proposta do projeto era 
 </div>
 <div id="How to use">
 
-## How to use:
+## Como usar:
 
-#### Clone this repository
+#### Clone esse repositório
 
 ```bash
 $ git clone https://github.com/bitlab-ufrn/selecao-2023-Jcassio-dev.git
 ```
 
-#### Access project folder in terminal/cmd
+#### Acesse a pasta do projeto no terminal/cmd
 
 ```bash
 $ cd /selecao-2023-Jcassio-dev.git
 ```
 
-#### Install the dependencies
+#### Instale as dependências
 
 ```bash
 $ npm install
 ```
 
-#### Run the application in development mode
+#### Execute a aplicação no modo de desenvolvimento
 
 ```bash
 $ npm run dev
 ```
-#### The server will start  - go to port informed
-
+#### O server será iniciado - Vá até a porta informada
+```bash
+localhost:port
+```
 </div>
 <div id="Software">
 
