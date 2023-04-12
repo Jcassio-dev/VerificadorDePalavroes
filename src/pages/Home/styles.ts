@@ -26,13 +26,14 @@ export const Info = styled.div`
     align-items: center;
     justify-content: center;
 
+    gap: 15px;
 
     h1{
         font-family: 'JetBrains Mono';
         font-weight: 700;
         font-size: 36px;
         line-height: 40px;
-        
+
         span{
             color: var(--green);
         }
