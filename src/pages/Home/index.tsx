@@ -22,11 +22,14 @@ export function Home() {
     const isInclude = badWordList.some(word => {
       if(formatText.includes(word)){
         badWords.push(word)
+
+        setText(formatText.replace(word, '*'))
       }   
     });
 
     const response = badWords.length > 0 ? toast.error(`Conteúdo Impróprio: ${badWords}`) : toast.success('Texto seguro!');
-
+   
+  
   }
 
   return(
