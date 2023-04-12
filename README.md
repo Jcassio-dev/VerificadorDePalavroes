@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/62391659/231556210-0193d78a-c9ef-4449-
 ## Descrição
 Projeto desenvolvido para a seleção do BitLab 2023, a proposta do projeto era desenvolver um detector de palavras ofensivas e de baixo calão dentro de um texto. Desenvolvi uma solução com base em uma lista de palavras impróprias já predefinidas, onde o texto do usuário passa por um filtro verificando sem alguma das palavras digitadas se encontra nessa lista. Caso encontre, o programa irá substituir as letras da palavra por "*" e retornará ao usuário quais foram as palavras de baixo calão utilizadas.
 
-
+Todas as palavras a serem filtradas podem ser encontradas em src/utils/badWordList.ts
 </div> 
 <div id="Features">
 
@@ -38,7 +38,7 @@ Projeto desenvolvido para a seleção do BitLab 2023, a proposta do projeto era 
 ## Caracteristicas:
 - React + Vite;
 - Component elements;
-- Flexbox;
+- CSS-in-JS;
 - global styles;
 - Array methods;
 
