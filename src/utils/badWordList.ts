@@ -115,6 +115,7 @@ export const badWordList = [
 	"curalho",
 	"cura!ho",
 	"cuza",
+	"cu",
 	"cuzinho",
 	"cuz!nho",
 	"cuzud",
