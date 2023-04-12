@@ -160,7 +160,6 @@ export const badWordList = [
 	"furnica",
 	"furn!ca",
 
-	"gay",
 	"gonore",
 	"gosma",
 	"gosment",
@@ -234,10 +233,6 @@ export const badWordList = [
 	"!adrona",
 	"lepros",
 	"!epros",
-	"lesbica",
-	"!esbica",
-	"lesb!ca",
-	"!esb!ca",
 	"loli",
 	"!oli",
 	"lo!i",
