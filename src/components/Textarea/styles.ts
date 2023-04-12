@@ -14,4 +14,5 @@ export const Container = styled.textarea`
 
     resize: none;
 
+    outline: none;
 `
