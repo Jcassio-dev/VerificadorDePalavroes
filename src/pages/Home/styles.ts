@@ -8,15 +8,24 @@ export const Container = styled.div`
     display: grid;
     place-content: center;
 
+    padding: 10px;
+
     img{
-        width: 400px;
-        height: 300px;
+        width: 500px;
+        height: 400px;
     }
 
     > div{
         display: flex;
         align-items: center;
-        margin: 0 auto;
+        gap: 100px;
+        
+    }
+
+    @media (max-width: 1280px){
+        img{
+            display: none;
+        }
     }
 `
 
@@ -34,6 +43,7 @@ export const Info = styled.div`
         font-size: 36px;
         line-height: 40px;
 
+        text-align: center;
         span{
             color: var(--green);
         }
