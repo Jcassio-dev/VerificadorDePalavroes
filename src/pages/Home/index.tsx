@@ -21,7 +21,7 @@ export function Home() {
     
     const isInclude = badWordList.some(word => {
       if(formatText.includes(word)){
-        badWords.push(word)
+        badWords.unshift(word)
       }   
     });
 
