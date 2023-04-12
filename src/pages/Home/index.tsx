@@ -1,10 +1,10 @@
-import { useState } from "react"
+import { useState } from "react";
 
 import { Container, Info } from "./styles";
 
 import { badWordList } from "../../utils/badWordList";
 
-import Security from '../../assets/Security.svg'
+import Security from '../../assets/Security.svg';
 
 import { Textarea } from "../../components/Textarea";
 import { Button } from "../../components/Button";
@@ -14,13 +14,18 @@ export function Home() {
   const [text, setText] = useState('');
 
   const verifyText = (text: string) => {
+    const badWords: string[] = [];
+
     const formatText = text.toLowerCase();
     
-    const isInclude = badWordList.some(word => formatText.includes(word));
+    const isInclude = badWordList.some(word => {
+      if(formatText.includes(word)){
+        badWords.push(word)
+      }   
+    });
 
-    const response = isInclude ? alert("palavra ofensiva detectada") : alert('Não há palavras ofensivas');
-
-    return response
+    const response = badWords.length > 0 ? alert(`palavra ofensiva detectada: ${badWords}`) : alert('Não há palavras ofensivas');
+    
   }
 
   return(
