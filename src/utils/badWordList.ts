@@ -3,7 +3,7 @@ export const badWordList = [
 	"ana!",
 	"ant",
 	"anus",
-	"arombad",
+	"arrombad",
 
 	"baba-ovo",
 	"babaca",
