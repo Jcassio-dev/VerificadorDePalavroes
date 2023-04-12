@@ -7,6 +7,7 @@ import { badWordList } from "../../utils/badWordList";
 import Security from '../../assets/Security.svg'
 
 import { Textarea } from "../../components/Textarea";
+import { Button } from "../../components/Button";
 
 
 export function Home() {
@@ -29,7 +30,7 @@ export function Home() {
       <Info>
         <h1>filtro de palavras <span>ofensivas</span></h1>
         <Textarea value={text} onChange={(e: any) => setText(e.target.value)} placeholder="Digite seu texto aqui"/>
-        <button onClick={() => verifyText(text)}>Checar</button>
+        <Button onClick={() => verifyText(text)} text="Verificar texto"/>
       </Info>
     </div>
     </Container>
