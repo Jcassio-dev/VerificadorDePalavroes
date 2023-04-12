@@ -1,8 +1,11 @@
 import { useState } from "react"
 
-import { Container } from "./styles";
+import { Container, Info } from "./styles";
 
 import { badWordList } from "../../utils/badWordList";
+
+import Security from '../../assets/Security.svg'
+
 
 export function Home() {
   const [text, setText] = useState('');
@@ -19,11 +22,14 @@ export function Home() {
 
   return(
     <Container>
-    <h1>Segurança Online</h1>
-    <h2>filtro de palavras ofensivas</h2>
-
-    <textarea value={text} onChange={(e: any) => setText(e.target.value)}/>
-    <button onClick={() => verifyText(text)}>Checar</button>
+      <div>
+        <img src={Security} alt="Rapaz mexendo no computador com cadeados e símbolos que exprimem segurança" />
+      <Info>
+        <h1>filtro de palavras ofensivas</h1>
+        <textarea value={text} onChange={(e: any) => setText(e.target.value)}/>
+        <button onClick={() => verifyText(text)}>Checar</button>
+      </Info>
+    </div>
     </Container>
   )
 }
