@@ -25,7 +25,7 @@ export function Home() {
       <div>
         <img src={Security} alt="Rapaz mexendo no computador com cadeados e símbolos que exprimem segurança" />
       <Info>
-        <h1>filtro de palavras ofensivas</h1>
+        <h1>filtro de palavras <span>ofensivas</span></h1>
         <textarea value={text} onChange={(e: any) => setText(e.target.value)}/>
         <button onClick={() => verifyText(text)}>Checar</button>
       </Info>

@@ -7,7 +7,7 @@ export const Container = styled.div`
 
     display: grid;
     place-content: center;
-    
+
     img{
         width: 400px;
         height: 300px;
@@ -25,5 +25,18 @@ export const Info = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+
+    h1{
+        font-family: 'JetBrains Mono';
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        
+        span{
+            color: var(--green);
+        }
+    }
+
 
 `
