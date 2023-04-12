@@ -26,7 +26,7 @@ export function Home() {
     });
 
     const censureBadWords = badWords.map(word => {
-      formatText = formatText.replace(word, '*')
+      formatText = formatText.replace(word, '*'.repeat(word.length))
       setText(formatText)
     })
 
