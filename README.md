@@ -7,16 +7,17 @@
 </p>
 
 Seleção - BitLab 2023 - Detector de textos impróprios
+
+## Acesse em
+- https://selecao-2023-jcassio-dev.vercel.app/
+
 <div align="center">
 
 https://user-images.githubusercontent.com/62391659/231556210-0193d78a-c9ef-4449-976f-687799e724bd.mp4
 
 </div>
 <div id="Description">
- 
-## Deploy
-- https://selecao-2023-jcassio-dev.vercel.app/
- 
+
 ## Descrição
 Projeto desenvolvido para a seleção do BitLab 2023, a proposta do projeto era desenvolver um detector de palavras ofensivas e de baixo calão dentro de um texto. Desenvolvi uma solução com base em uma lista de palavras impróprias já predefinidas, onde o texto do usuário passa por um filtro verificando sem alguma das palavras digitadas se encontra nessa lista. Caso encontre, o programa irá substituir as letras da palavra por "*" e retornará ao usuário quais foram as palavras de baixo calão utilizadas.
 
