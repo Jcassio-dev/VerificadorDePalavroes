@@ -1,8 +1,8 @@
 import { useState } from "react"
-import { badWordList } from "./utils/badWordList";
+import { badWordList } from "../../utils/badWordList";
 
 
-export function App() {
+export function Home() {
   const [text, setText] = useState('');
 
   const verifyText = (text: string) => {
@@ -26,4 +26,3 @@ export function App() {
   )
 }
 
-export default App
