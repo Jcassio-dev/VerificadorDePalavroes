@@ -336,7 +336,7 @@ export const badWordList = [
 	"pik",
 	"pic4",
 	"p1k",
-	"p!k"
+	"p!k",
 	"pora",
     "porra",
     "p0rra",
