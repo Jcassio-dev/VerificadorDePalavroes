@@ -61,7 +61,7 @@ export function ApiInfo() {
     <Container>
 
       <Header>
-        <TextButton onClick={() => navigate(-1)} text="voltar"/>
+        <TextButton onClick={() => navigate("/")} text="voltar"/>
         <h1>Informações da <span>API</span></h1>
         <TextButton text="sobre" link="https://github.com/Jcassio-dev/ProfanityWords-API"/>
       </Header>
