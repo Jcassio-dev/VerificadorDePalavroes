@@ -9,6 +9,7 @@ export const Container = styled.input`
     background-color: #222042;
     border: none;
     border-radius: 10px;
+    outline: none;
 
     padding: 0 14px;
 
@@ -21,9 +22,5 @@ export const Container = styled.input`
 
     &::placeholder{
         color: gray
-    }
-    
-    &:focus{
-        border: none;
     }
 `
