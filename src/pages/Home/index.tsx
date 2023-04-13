@@ -27,9 +27,9 @@ export function Home() {
 
     let formatText = text.toLowerCase();
     
-    const isInclude = words.some(word => {
-      if(formatText.includes(word.title)){
-        badWords.push(word.title)
+    const isInclude = badWordList.some(word => {
+      if(formatText.includes(word)){
+        badWords.push(word)
       }   
     });
 
