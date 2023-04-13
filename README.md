@@ -64,13 +64,13 @@ Todas as palavras a serem filtradas podem ser encontradas em src/utils/badWordLi
 #### Clone esse repositório
 
 ```bash
-$ git clone https://github.com/Jcassio-dev/ProfanityWords-API.git
+$ git clone https://github.com/bitlab-ufrn/selecao-2023-Jcassio-dev.git
 ```
 
 #### Acesse a pasta do projeto no terminal/cmd
 
 ```bash
-$ cd /ProfanityWords-API
+$ cd /selecao-2023-Jcassio-dev
 ```
 
 #### Instale as dependências
