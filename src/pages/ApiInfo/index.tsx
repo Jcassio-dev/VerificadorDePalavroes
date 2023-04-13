@@ -93,7 +93,7 @@ export function ApiInfo() {
             <h3>Achou alguma ofensa que não está aqui? <br/> <span>Deixe sua sugestão</span></h3>
                   
             <div className="inputWrapper">
-            <Input placeholder="Deixe sua sugestão aqui" onChange={(e: any) => setTitle(e.target.value)}/>
+            <Input placeholder="Deixe sua sugestão aqui" onChange={(e: any) => setTitle(e.target.value)} maxLenght={30}/>
             <Button text="Enviar" onClick={handleSendSugestion}/>
             </div>
         </Form>
