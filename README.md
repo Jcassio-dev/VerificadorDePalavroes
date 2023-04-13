@@ -60,7 +60,7 @@ Todas as palavras a serem censuradas estão no banco de dados da API criada para
 ## Tecnologias:
 
 - Languages: `typescript` `CSS` `HTML`
-- Libraries: `react` `react-icons` `styled-components` `react-toastify`
+- Libraries: `react` `react-icons` `styled-components` `react-toastify` `axios`
 - Version control: `Git & Github`
 
 </div>
