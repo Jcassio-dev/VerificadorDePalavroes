@@ -32,17 +32,3 @@ export const Header = styled.div`
     }
 `
 
-export const TextButton = styled.button`
-    background: none;
-    border: none;
-
-    color: var(--white);
-
-    cursor: pointer;
-
-    a{
-        text-decoration: none;
-        color: var(--white);
-    }
-
-`

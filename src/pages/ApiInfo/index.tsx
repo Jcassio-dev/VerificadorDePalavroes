@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, redirect } from 'react-router-dom'
 import { toast } from "react-toastify";
 
-
-import { Container, Header, TextButton } from "./styles";
+import { Container, Header } from "./styles";
 
 import { api } from '../../services/api'
 
 import { Button } from "../../components/Button";
+import { TextButton } from "../../components/TextButton";
 
 interface  BadWordInterface{
   id: number;
@@ -31,10 +31,11 @@ export function ApiInfo() {
   return(
     <Container>
       <Header>
-        <TextButton onClick={() => navigate(-1)}>Voltar</TextButton>
+        <TextButton onClick={() => navigate(-1)} text="voltar"/>
         <h1>Informações da <span>API</span></h1>
-        <TextButton><a href="https://github.com/Jcassio-dev/ProfanityWords-API" target="_blank">Sobre</a></TextButton>
+        <TextButton text="sobre" link="https://github.com/Jcassio-dev/ProfanityWords-API"/>
      </Header>
+
      <h2>Palavrões catálogados até agora</h2>
      <div>
       {words && words.map(word => (
