@@ -44,9 +44,6 @@ export const Info = styled.div`
         line-height: 40px;
 
         text-align: center;
-        span{
-            color: var(--green);
-        }
     }
 
 

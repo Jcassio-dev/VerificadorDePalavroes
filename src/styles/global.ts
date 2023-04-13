@@ -23,4 +23,8 @@ export default createGlobalStyle`
     body, input, button, textarea {
         font-family: 'Poppins', sans-serif;
     }
+
+    span{
+            color: var(--green);
+    }
 `
