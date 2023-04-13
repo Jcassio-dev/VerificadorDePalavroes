@@ -34,7 +34,7 @@ export function ApiInfo() {
 
     }catch(error: any){
         if(error.response){
-            toast.warn(error.response.data.message)
+            toast.warn("Sugestão já inclusa na lista")
         }else{
             toast.warn("Não foi possível registrar uma sugestão");
         }
