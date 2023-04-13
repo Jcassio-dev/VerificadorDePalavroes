@@ -79,7 +79,7 @@ export const Section = styled.section`
     div{
         background-color: #222042;
 
-        height: 150px;
+        height: 300px;
         min-width: 150px;
         max-width: 500px;
         width: 100%;
