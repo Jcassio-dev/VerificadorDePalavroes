@@ -59,7 +59,7 @@ Todas as palavras a serem filtradas podem ser encontradas em src/utils/badWordLi
 </div>
 <div id="How to use">
 
-## Como usar:
+## Como usar localmente:
 
 #### Clone esse repositório
 
