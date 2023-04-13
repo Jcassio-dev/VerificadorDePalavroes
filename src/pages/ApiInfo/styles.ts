@@ -30,6 +30,8 @@ export const Header = styled.div`
         font-weight: 700;
         font-size: 28px;
         line-height: 40px;
+
+        text-align: center;
     }
 `
 
