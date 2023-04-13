@@ -9,7 +9,7 @@ onClick?: any;
 
 export const Button: FC<ButtonProps> = ({text, onClick}) => {
     return (
-        <Container onClick={onClick}>
+        <Container type="button" onClick={onClick}>
             {text}
         </Container>
     );

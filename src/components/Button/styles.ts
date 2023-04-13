@@ -14,7 +14,7 @@ export const Container = styled.button`
     border-radius: 10px;
 
     font-family: 'Poppins';
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
 
     display: flex;
