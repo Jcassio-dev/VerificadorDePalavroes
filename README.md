@@ -8,8 +8,13 @@
 
 Seleção - BitLab 2023 - Detector de textos impróprios
 
-## Acesse em
-- https://selecao-2023-jcassio-dev.vercel.app/
+## Instruções
+- 1 - Acesse a aplicação em: https://selecao-2023-jcassio-dev.vercel.app/;
+- 2 - Digite no campo de texto, que tem escrito "digite seu texto aqui";
+- 3 - Aperte em verificar texto;
+
+- 3.1 - Caso o texto possua palavras ofensivas, ele irá retornar uma notificação dizendo quais foram as palavras ofensivas utilizas e vai censurá-las no texto digitado, substituindo as letras por asteriscos;
+- 3.2 - Caso não seja observada nenhuma palavra ofensiva, o programa retornará uma notificação com a mensagem "Texto Seguro";
 
 <div align="center">
 
