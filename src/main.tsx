@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { Home } from './pages/Home'
+import { AppRoutes } from './routes'
 import GlobalStyles from './styles/global'
 
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+
 
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
@@ -20,6 +21,6 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     draggable
     theme="dark"
     />
-    <Home />
+    <AppRoutes />
   </React.StrictMode>,
 )
