@@ -15,6 +15,14 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    *::-webkit-scrollbar{
+        width: 10px;
+    }
+    *::-webkit-scrollbar-thumb{
+        background-color: var(--black);
+        border-radius: 20px;
+    }
+
     body{
         color: var(--white);
         background: var(--black);
