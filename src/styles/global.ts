@@ -35,4 +35,11 @@ export default createGlobalStyle`
     span{
             color: var(--green);
     }
+
+    @keyframes is-rotating {
+        to {
+    transform: rotate(1turn);
+        }
+    }
 `
+
