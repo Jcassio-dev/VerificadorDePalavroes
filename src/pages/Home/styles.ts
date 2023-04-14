@@ -63,3 +63,11 @@ export const Info = styled.div`
     }
 
 `
+export const Loading = styled.div`
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-radius: 50%;
+    border-top-color: #51d4db;
+    height: 25px;
+    width: 25px;
+  `

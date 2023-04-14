@@ -21,6 +21,8 @@ export const Container = styled.button`
     align-items: center;
     justify-content: center;
 
+    gap: 10px;
+
     transition: 0.3s;
 
     cursor: pointer;
