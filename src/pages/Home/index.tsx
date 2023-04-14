@@ -27,7 +27,7 @@ export function Home() {
 
   const verifyText = (text: string) => {
     if(!text){
-      toast.warn("Digite algo antes para poder ser analisado!");
+      return toast.warn("Digite algo antes para poder ser analisado!");
     }
     const badWords: string[] = [];
 
