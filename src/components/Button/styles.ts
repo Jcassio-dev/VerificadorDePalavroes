@@ -29,4 +29,8 @@ export const Container = styled.button`
         background-color: var(--green);
         color: var(--white);
     }
+
+    &:disabled{
+        opacity: 0.5;
+    }
 `
