@@ -33,6 +33,7 @@ export const Header = styled.div`
 
         text-align: center;
     }
+
 `
 
 export const Main = styled.div`
@@ -50,6 +51,12 @@ export const Main = styled.div`
         font-size: 24px;
         font-family: 'JetBrains Mono';
         color: var(--green);
+    }
+    
+    .titleWrapper{
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .Sections{

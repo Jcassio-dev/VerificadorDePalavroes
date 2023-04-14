@@ -9,6 +9,7 @@ import { api } from '../../services/api';
 import { Button } from "../../components/Button";
 import { TextButton } from "../../components/TextButton";
 import { Input } from "../../components/Input";
+import { Loading } from "../../components/Loading";
 
 interface  BadWordInterface{
   id: number;
@@ -82,7 +83,12 @@ export function ApiInfo() {
       </Header>
 
       <Main>
-      {isFetching ? <h1>Buscando dados...</h1> : <h1>Catalogados</h1>}
+      {isFetching ? 
+        <div className="titleWrapper">
+          <Loading/>
+          <h1> Buscando dados...</h1>
+        </div> : <h1>Catalogados</h1>
+        }
 
         <div className="Sections">
           <Section>
