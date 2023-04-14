@@ -69,7 +69,7 @@ export function Home() {
         <img src={Security} alt="Rapaz mexendo no computador com cadeados e símbolos que exprimem segurança" />
 
       <Info>
-        <h1>filtro de palavras <span>ofensivas</span></h1>
+        <h1>Filtro de Palavras <span>Ofensivas</span></h1>
 
         <Textarea 
         value={text} 
