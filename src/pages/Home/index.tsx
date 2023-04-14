@@ -80,10 +80,9 @@ export function Home() {
         <Button 
         onClick={() => 
         verifyText(text)} 
-        text={isFetching ? "Buscando dados na API..." : "Verificar texto"} 
+        text={isFetching ? "Buscando dados na API...": "Verificar texto"} 
         disabled={isFetching}
         />
-
       </Info>
     </Content>
 
