@@ -26,19 +26,15 @@ export function ApiInfo() {
   const navigate = useNavigate();
 
   async function handleSendSugestion(){
-
     if(!title){
       return toast.warn("Digite algo para poder enviar a sugestão");
     }
-
     setIsSending(true);
-
     try{
       await api.post('/sugestions', {title}).then(({data}) => {
         setIsSending(false), 
-        toast.success(`Sugestão ${title} inserida! Atualize a página para vê-la`)
+        toast.success(`Sugestão ${title} inserida!`)
       });
-      
     }catch(error: any){
         if(error.response){
             toast.warn("Sugestão já inclusa na lista");
@@ -54,16 +50,17 @@ export function ApiInfo() {
     async function fetchWords(){
        await api.get("/words?title=").then(({data}) => {setWords(data), setIsFetching(false)});
     }
+    fetchWords();
+    console.log(words);
+  }, []);
+
+  useEffect(() => {
     async function fetchSugestions(){
       await api.get("/sugestions?title=").then(({data}) => setSugestions(data));
    }
-
-    fetchWords();
-    fetchSugestions();
-
-    console.log(words);
-    console.log(sugestions);
-  }, [])
+   fetchSugestions();
+   console.log(sugestions);
+  }, [isSending])
 
 
   return(
