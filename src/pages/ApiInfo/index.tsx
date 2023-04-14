@@ -20,6 +20,7 @@ export function ApiInfo() {
   const [title, setTitle] = useState('');
   const [words, setWords] = useState<BadWordInterface[]>([]);
   const [sugestions, setSugestions] = useState<BadWordInterface[]>([]);
+  const [isFetching, setIsFetching] = useState(true);
 
   const navigate = useNavigate();
 
@@ -43,7 +44,7 @@ export function ApiInfo() {
 
   useEffect(() => {
     async function fetchWords(){
-       await api.get("/words?title=").then(({data}) => setWords(data));
+       await api.get("/words?title=").then(({data}) => {setWords(data), setIsFetching(false)});
     }
     async function fetchSugestions(){
       await api.get("/sugestions?title=").then(({data}) => setSugestions(data));
@@ -76,7 +77,7 @@ export function ApiInfo() {
       </Header>
 
       <Main>
-       <h1>Catalogados</h1>
+      {isFetching ? <h1>Buscando dados...</h1> : <h1>Catalogados</h1>}
 
         <div className="Sections">
           <Section>
