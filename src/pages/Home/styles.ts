@@ -8,7 +8,7 @@ export const Container = styled.div`
     display: grid;
     place-content: center;
 
-    padding: 10px;
+    padding: 20px;
 
     position: relative;
 
@@ -27,7 +27,7 @@ export const Container = styled.div`
 
             background: none;
 
-            width: 200px;
+            width: max-content;
         } 
     }
 
