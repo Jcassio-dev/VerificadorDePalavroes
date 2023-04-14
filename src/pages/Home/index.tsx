@@ -58,7 +58,7 @@ export function Home() {
       <div className="textButton">
 
       <TextButton 
-      text="Informações da API" 
+      text="Sugerir palavra" 
       onClick={() => 
       navigate("/api")}
       />
