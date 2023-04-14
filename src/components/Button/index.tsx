@@ -1,6 +1,6 @@
 import {FC} from 'react';
 import {Container} from './styles'
-import { Loading } from '../../pages/Home/styles'
+import { Loading } from '../Loading'
 
 interface ButtonProps {
 text?: string; 
