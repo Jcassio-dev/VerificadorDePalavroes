@@ -36,7 +36,7 @@ https://user-images.githubusercontent.com/62391659/231818520-d2face79-ab10-40ad-
 ### Solução para o problema: 
 Projeto desenvolvido para a seleção do BitLab 2023, a proposta do projeto era desenvolver um detector de palavras ofensivas e de baixo calão dentro de um texto. Desenvolvi uma solução com base em uma lista de palavras impróprias já predefinidas em um banco de dados, onde o texto do usuário passa por um filtro verificando sem alguma das palavras digitadas se encontra nessa lista. Caso encontre, o programa irá substituir as letras da palavra por "*" e retornará ao usuário quais foram as palavras de baixo calão utilizadas.
 
-### Solução para o problema (Técnicamente):
+### Solução para o problema (Tecnicamente):
 
 Através de uma API, a aplicação vai consultar um banco de dados com uma lista de palavras. Enquanto essa lista não é recebida, o botão de verificação ficará desabilitado para que o usuário não utilize ainda a aplicação. Ao receber essa lista ele armazenará em um Array e também habilitará o botão.
 
