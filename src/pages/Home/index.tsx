@@ -26,6 +26,9 @@ export function Home() {
   const navigate = useNavigate();
 
   const verifyText = (text: string) => {
+    if(!text){
+      toast.warn("Digite algo antes para poder ser analisado!");
+    }
     const badWords: string[] = [];
 
     let formatText = text.toLowerCase();
