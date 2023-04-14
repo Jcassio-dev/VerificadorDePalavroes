@@ -6,8 +6,6 @@ import { Container, Content, Info } from "./styles";
 
 import { api } from '../../services/api'
 
-import { badWordList } from "../../utils/badWordList";
-
 import Security from '../../assets/Security.svg';
 
 import { Textarea } from "../../components/Textarea";
@@ -58,7 +56,13 @@ export function Home() {
     <Container>
 
       <div className="textButton">
-      <TextButton text="Informações da API" onClick={() => navigate("/api")}/>
+
+      <TextButton 
+      text="Informações da API" 
+      onClick={() => 
+      navigate("/api")}
+      />
+
       </div>
 
       <Content>
@@ -66,8 +70,20 @@ export function Home() {
 
       <Info>
         <h1>filtro de palavras <span>ofensivas</span></h1>
-        <Textarea value={text} onChange={(e: any) => setText(e.target.value)} placeholder="Digite seu texto aqui"/>
-        <Button onClick={() => verifyText(text)} text={isFetching ? "Buscando dados na API..." : "Verificar texto"} disabled={isFetching}/>
+
+        <Textarea 
+        value={text} 
+        onChange={(e: any) => setText(e.target.value)} 
+        placeholder="Digite seu texto aqui"
+        />
+
+        <Button 
+        onClick={() => 
+        verifyText(text)} 
+        text={isFetching ? "Buscando dados na API..." : "Verificar texto"} 
+        disabled={isFetching}
+        />
+
       </Info>
     </Content>
 

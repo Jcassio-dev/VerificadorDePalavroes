@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 import { Container, Header, Main, Section, Form } from "./styles";
 
-import { api } from '../../services/api'
+import { api } from '../../services/api';
 
 import { Button } from "../../components/Button";
 import { TextButton } from "../../components/TextButton";
@@ -18,8 +18,8 @@ interface  BadWordInterface{
 
 export function ApiInfo() {
   const [title, setTitle] = useState('');
-  const [words, setWords] = useState<BadWordInterface[]>([])
-  const [sugestions, setSugestions] = useState<BadWordInterface[]>([])
+  const [words, setWords] = useState<BadWordInterface[]>([]);
+  const [sugestions, setSugestions] = useState<BadWordInterface[]>([]);
 
   const navigate = useNavigate();
 
@@ -29,12 +29,12 @@ export function ApiInfo() {
     }
 
     try{
-      await api.post('/sugestions', {title})
-      toast.success("Sugestão inserida! Atualize a página para vê-la")
+      await api.post('/sugestions', {title});
+      toast.success("Sugestão inserida! Atualize a página para vê-la");
 
     }catch(error: any){
         if(error.response){
-            toast.warn("Sugestão já inclusa na lista")
+            toast.warn("Sugestão já inclusa na lista");
         }else{
             toast.warn("Não foi possível registrar uma sugestão");
         }
@@ -52,8 +52,8 @@ export function ApiInfo() {
     fetchWords();
     fetchSugestions();
 
-    console.log(words)
-    console.log(sugestions)
+    console.log(words);
+    console.log(sugestions);
   }, [])
 
 
@@ -61,9 +61,18 @@ export function ApiInfo() {
     <Container>
 
       <Header>
-        <TextButton onClick={() => navigate("/")} text="voltar"/>
+        <TextButton 
+        onClick={() => navigate("/")} 
+        text="voltar"
+        />
+
         <h1>Informações da <span>API</span></h1>
-        <TextButton text="sobre" link="https://github.com/Jcassio-dev/ProfanityWords-API"/>
+
+        <TextButton 
+        text="sobre" 
+        link="https://github.com/Jcassio-dev/ProfanityWords-API"
+        />
+
       </Header>
 
       <Main>
@@ -93,8 +102,17 @@ export function ApiInfo() {
             <h3>Achou alguma ofensa que não está aqui? <br/> <span>Deixe sua sugestão</span></h3>
                   
             <div className="inputWrapper">
-            <Input placeholder="Deixe sua sugestão aqui" onChange={(e: any) => setTitle(e.target.value)} maxLenght={15}/>
-            <Button text="Enviar" onClick={handleSendSugestion}/>
+            <Input 
+            placeholder="Deixe sua sugestão aqui" 
+            onChange={(e: any) => setTitle(e.target.value)} 
+            maxLenght={15}
+            />
+
+            <Button 
+            text="Enviar" 
+            onClick={handleSendSugestion}
+            />
+
             </div>
         </Form>
       </Main>
