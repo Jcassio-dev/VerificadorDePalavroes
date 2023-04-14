@@ -10,7 +10,7 @@ Seleção - BitLab 2023 - Detector de textos impróprios
 
 ## Instruções
 - 1 - Acesse a aplicação em: https://selecao-2023-jcassio-dev.vercel.app/;
-- 1.1 - Espere a aplicação terminar de consultar a API, o botão mudará de texto e ficará habilitado para ser apertado.
+- 1.1 - Espere a aplicação terminar de consultar a API, pode demorar entre 1 à 3 minutos caso seja a primeira consulta do dia.
 - 2 - Digite no campo de texto, que tem escrito "digite seu texto aqui";
 - 3 - Aperte em verificar texto;
 
@@ -26,7 +26,10 @@ Seleção - BitLab 2023 - Detector de textos impróprios
 
 <div align="center">
 
-https://user-images.githubusercontent.com/62391659/231818520-d2face79-ab10-40ad-a3df-2308c168e26a.mp4
+## Vídeo demonstração:
+
+https://user-images.githubusercontent.com/62391659/232137027-f936064f-1332-4683-a54f-fd5f33c4591f.mp4
+
 
 </div>
 <div id="Description">
