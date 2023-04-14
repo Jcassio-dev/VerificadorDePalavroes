@@ -22,7 +22,8 @@ interface  BadWordInterface{
 
 export function Home() {
   const [text, setText] = useState('');
-  const [words, setWords] = useState<BadWordInterface[]>([])
+  const [words, setWords] = useState<BadWordInterface[]>([]);
+  const [isFetching, setIsFetching] = useState(true);
 
   const navigate = useNavigate();
 
@@ -43,12 +44,11 @@ export function Home() {
     })
 
     const response = badWords.length > 0 ? toast.error(`Conteúdo Impróprio: ${badWords}`) : toast.success('Texto seguro!');
-   
   }
 
   useEffect(() => {
     async function fetchWords(){
-       await api.get("/words?title=").then(({data}) => setWords(data));
+      await api.get("/words?title=").then(({data}) => {setWords(data), setIsFetching(false)});
     }
     fetchWords();
     console.log(words)
@@ -67,7 +67,7 @@ export function Home() {
       <Info>
         <h1>filtro de palavras <span>ofensivas</span></h1>
         <Textarea value={text} onChange={(e: any) => setText(e.target.value)} placeholder="Digite seu texto aqui"/>
-        <Button onClick={() => verifyText(text)} text="Verificar texto"/>
+        <Button onClick={() => verifyText(text)} text={isFetching ? "Buscando dados na API..." : "Verificar texto"} disabled={isFetching}/>
       </Info>
     </Content>
 
