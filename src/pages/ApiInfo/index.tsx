@@ -21,23 +21,31 @@ export function ApiInfo() {
   const [words, setWords] = useState<BadWordInterface[]>([]);
   const [sugestions, setSugestions] = useState<BadWordInterface[]>([]);
   const [isFetching, setIsFetching] = useState(true);
+  const [isSending, setIsSending] = useState(false);
 
   const navigate = useNavigate();
 
   async function handleSendSugestion(){
+
     if(!title){
       return toast.warn("Digite algo para poder enviar a sugestão");
     }
 
-    try{
-      await api.post('/sugestions', {title});
-      toast.success("Sugestão inserida! Atualize a página para vê-la");
+    setIsSending(true);
 
+    try{
+      await api.post('/sugestions', {title}).then(({data}) => {
+        setIsSending(false), 
+        toast.success(`Sugestão ${title} inserida! Atualize a página para vê-la`)
+      });
+      
     }catch(error: any){
         if(error.response){
             toast.warn("Sugestão já inclusa na lista");
+            setIsSending(false);
         }else{
             toast.warn("Não foi possível registrar uma sugestão");
+            setIsSending(false);
         }
     }
 }
@@ -100,7 +108,10 @@ export function ApiInfo() {
         </div>
 
         <Form>
-            <h3>Achou alguma ofensa que não está aqui? <br/> <span>Deixe sua sugestão</span></h3>
+            <h3>
+              Achou alguma ofensa que não está aqui? <br/> 
+              <span>{isSending ? 'Enviando sugestão...': 'Deixe sua sugestão'}</span>
+            </h3>
                   
             <div className="inputWrapper">
             <Input 
