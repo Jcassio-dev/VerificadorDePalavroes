@@ -31,7 +31,7 @@ export function ApiInfo() {
     }
     setIsSending(true);
     try{
-      await api.post('/sugestions', {title}).then(({data}) => {
+      await api.post('/sugestions', {title}).then(() => {
         setIsSending(false), 
         toast.success(`Sugestão ${title} inserida!`)
       });
