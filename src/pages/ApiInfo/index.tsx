@@ -38,7 +38,7 @@ export function ApiInfo() {
         setIsSending(false), 
         toast.success(`Sugestão ${formatText} inserida!`)
       });
-      
+
     }catch(error: any){
         if(error.response){
             toast.warn(error.response.data.message);
@@ -116,7 +116,7 @@ export function ApiInfo() {
         <Form>
             <h3>
               Achou alguma ofensa que não está aqui? <br/> 
-              <span>{isSending ? 'Enviando sugestão...': 'Deixe sua sugestão'}</span>
+              <span>{isSending ? <div className="titleWrapper"> <Loading/> Enviando sugestão...</div>: 'Deixe sua sugestão'}</span>
             </h3>
                   
             <div className="inputWrapper">
