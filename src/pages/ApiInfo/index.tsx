@@ -32,13 +32,10 @@ export function ApiInfo() {
     }
     setIsSending(true);
     try{
-      const formatText = title.toLowerCase();
-
-      await api.post('/sugestions', {formatText}).then(() => {
+      await api.post('/sugestions', {title}).then(() => {
         setIsSending(false), 
-        toast.success(`Sugestão ${formatText} inserida!`)
+        toast.success(`Sugestão ${title} inserida!`)
       });
-
     }catch(error: any){
         if(error.response){
             toast.warn(error.response.data.message);
@@ -116,7 +113,7 @@ export function ApiInfo() {
         <Form>
             <h3>
               Achou alguma ofensa que não está aqui? <br/> 
-              <span>{isSending ? <div className="titleWrapper"> <Loading/> Enviando sugestão...</div>: 'Deixe sua sugestão'}</span>
+              <span>{isSending ? 'Enviando sugestão...': 'Deixe sua sugestão'}</span>
             </h3>
                   
             <div className="inputWrapper">
