@@ -31,6 +31,7 @@ export function ApiInfo() {
       return toast.warn("Digite algo para poder enviar a sugestão");
     }
     setIsSending(true);
+    setTitle(title.toLowerCase());
     try{
       await api.post('/sugestions', {title}).then(() => {
         setIsSending(false), 
