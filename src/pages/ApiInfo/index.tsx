@@ -31,12 +31,14 @@ export function ApiInfo() {
       return toast.warn("Digite algo para poder enviar a sugestão");
     }
     setIsSending(true);
-    setTitle(title.toLowerCase());
     try{
-      await api.post('/sugestions', {title}).then(() => {
+      const formatText = title.toLowerCase();
+
+      await api.post('/sugestions', {formatText}).then(() => {
         setIsSending(false), 
-        toast.success(`Sugestão ${title} inserida!`)
+        toast.success(`Sugestão ${formatText} inserida!`)
       });
+      
     }catch(error: any){
         if(error.response){
             toast.warn(error.response.data.message);
