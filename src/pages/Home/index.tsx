@@ -49,10 +49,10 @@ export function Home() {
 
   useEffect(() => {
     async function fetchWords(){
-      await api.get("/words?title=").then(({data}) => {setWords(data), setIsFetching(false)});
+      await api.get("/words").then(({data}) => {setWords(data), setIsFetching(false), console.log(words)});
     }
     fetchWords();
-    console.log(words)
+    
   }, [])
 
   return(

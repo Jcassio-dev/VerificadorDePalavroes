@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, redirect } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { toast } from "react-toastify";
 
 import { Container, Header, Main, Section, Form } from "./styles";
@@ -49,18 +49,16 @@ export function ApiInfo() {
 
   useEffect(() => {
     async function fetchWords(){
-       await api.get("/words?title=").then(({data}) => {setWords(data), setIsFetching(false)});
+       await api.get("/words?title=").then(({data}) => {setWords(data), setIsFetching(false), console.log(words);});
     }
     fetchWords();
-    console.log(words);
   }, []);
 
   useEffect(() => {
     async function fetchSugestions(){
-      await api.get("/sugestions?title=").then(({data}) => setSugestions(data));
+      await api.get("/sugestions?title=").then(({data}) => {setSugestions(data),  console.log(sugestions);});
    }
    fetchSugestions();
-   console.log(sugestions);
   }, [isSending])
 
 
