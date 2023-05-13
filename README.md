@@ -9,7 +9,7 @@
 Seleção - BitLab 2023 - Detector de textos impróprios
 
 ## Instruções
-- 1 - Acesse a aplicação em: https://selecao-2023-jcassio-dev.vercel.app/;
+- 1 - Acesse a aplicação em: https://verificadordeofensas.netlify.app/;
 - 1.1 - Espere a aplicação terminar de consultar a API, pode demorar entre 1 à 3 minutos caso seja a primeira consulta do dia.
 - 2 - Digite no campo de texto, que tem escrito "digite seu texto aqui";
 - 3 - Aperte em verificar texto;
