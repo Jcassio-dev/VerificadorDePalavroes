@@ -6,7 +6,7 @@
  <a href="#Software">Software</a> 
 </p>
 
-Seleção - BitLab 2023 - Detector de textos impróprios
+Seleção - Detector de textos impróprios
 
 ## Instruções
 - 1 - Acesse a aplicação em: https://verificadordeofensas.netlify.app/;
