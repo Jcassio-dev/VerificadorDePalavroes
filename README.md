@@ -92,7 +92,7 @@ Os usuários tem apenas o acesso a consulta da tabela de palavrões, consulta e 
 #### Clone esse repositório
 
 ```bash
-$ git clone https://github.com/bitlab-ufrn/selecao-2023-Jcassio-dev.git
+$ git clone https://github.com/Jcassio-dev/VerificadorDePalavroes
 ```
 
 #### Acesse a pasta do projeto no terminal/cmd
