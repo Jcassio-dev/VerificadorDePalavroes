@@ -33,27 +33,31 @@ export function Home() {
 
     let formatText = text.toLowerCase();
     
-    const isInclude = words.some(word => {
+    words.some(word => {
       if(formatText.includes(word.title)){
         badWords.push(word.title)
       }   
     });
 
-    const censureBadWords = badWords.map(word => {
+    badWords.map(word => {
       formatText = formatText.replaceAll(word, '*'.repeat(word.length))
       setText(formatText)
     })
 
-    const response = badWords.length > 0 ? toast.error(`Conteúdo Impróprio: ${badWords}`) : toast.success('Texto seguro!');
+    badWords.length > 0 ? toast.error(`Conteúdo Impróprio: ${badWords}`) : toast.success('Texto seguro!');
   }
 
   useEffect(() => {
     async function fetchWords(){
-      await api.get("/words").then(({data}) => {setWords(data), setIsFetching(false), console.log(words)});
+      await api.get("/words?title=").then(({data}: any) => {setWords(data), setIsFetching(false), console.log(data)});
     }
     fetchWords();
     
   }, [])
+
+  useEffect(()=>{
+    console.log(words)
+  }, [isFetching])
 
   return(
     <Container>
